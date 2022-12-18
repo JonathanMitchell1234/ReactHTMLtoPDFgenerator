@@ -1,20 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-.linkField {
-    height: 30px;
-    
-}
-
 .headerTitle {
     font-family: 'Alata', sans-serif;
     font-size: 50px;
     color: aliceblue;
-   
 }
 
 .subTitle {
     font-family: 'Alata', sans-serif;
     color: aliceblue;
+}
+
+.linkField {
+  height: 30px;
+  margin-top: 80px;
+  margin-bottom:40px;
+}
+
+input[type="text"] {
+  width: 40%;
+  height: 30px;
+  margin-top: 80px;
+  margin-bottom:40px;
+}
+
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 90%;
+  }
 }
 
 .anim_gradient {
