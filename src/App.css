@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.linkField {
+    height: 30px;
+    
+}
+
+.headerTitle {
+    font-family: 'Alata', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+   
+}
+
+.subTitle {
+    font-family: 'Alata', sans-serif;
+    color: aliceblue;
+}
+
+.anim_gradient {
+background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
+        background-size : "400% 400%";
+        animation : "gradient 25s ease infinite";
+    }
+      
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+};
