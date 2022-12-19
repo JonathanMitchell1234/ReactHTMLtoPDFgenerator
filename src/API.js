@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
+import { Container } from "@mui/material";
 
 function MyComponent() {
 	const [htmlUrl, setHtmlUrl] = useState("");
@@ -36,15 +37,18 @@ function MyComponent() {
 			});
 	};
 
-	return (
+return (
+	<Container maxWidth="lg" style={{ textAlign: "center" }}>
 		<div>
 			<input type="text" className="linkField" value={htmlUrl} onChange={handleChange} /> <br />
 			<LoadingButton
 				loading={isLoading} // Use the isLoading state to control the loading state of the button
 				loadingIndicator="Loading…"
-				variant="outlined"
+				variant="contained"
 				onClick={handleGeneratePdf}
+				style={{ backgroundColor: "#068FF1" }}
 			>
+				{" "}
 				Generate PDF
 			</LoadingButton>
 			{pdfUrl && (
@@ -59,7 +63,8 @@ function MyComponent() {
 				</div>
 			)}
 		</div>
-	);
+	</Container>
+);
 }
 
 export default MyComponent;

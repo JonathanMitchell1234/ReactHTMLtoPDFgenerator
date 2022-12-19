@@ -11,16 +11,11 @@
     color: aliceblue;
 }
 
-.linkField {
-  height: 30px;
-  margin-top: 80px;
-  margin-bottom:40px;
-}
 
 input[type="text"] {
   width: 40%;
   height: 30px;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom:40px;
 }
 
@@ -47,3 +42,8 @@ background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
     background-position: 0% 50%;
   }
 };
+
+
+.LoadingButton {
+    width: 100vw;
+}
