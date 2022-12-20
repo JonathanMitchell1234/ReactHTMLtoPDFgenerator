@@ -20,8 +20,9 @@ function MyComponent() {
 			.post(
 				"https://api.html2pdf.app/v1/generate",
 				{
-					html: `<iframe src="${htmlUrl}" height="1000%" width="100%" />`,
+					html: `<iframe src="${htmlUrl}" height="1000%" width="100%"  />`,
 					apiKey: "thDFo86J5Cs2cLdGvnCTuiMEAfqtb79GG0AETyGbsrpMAfTxc7IwPwkYzHK3n3wl",
+          
 				},
 				{ responseType: "arraybuffer" }
 			)
@@ -53,11 +54,17 @@ return (
 			</LoadingButton>
 			{pdfUrl && (
 				<div>
-					<a href={pdfUrl} target="_blank" rel="noopener noreferrer">
+					<Button
+						variant="contained"
+						style={{ backgroundColor: "#068FF1" }}
+						onClick={() => window.open(pdfUrl, "_blank")}
+					>
 						View PDF
-					</a>
+					</Button>
 					<br />
-					<Button variant="contained" onClick={() => setPdfUrl("")}>
+					<Button 
+          variant="contained" 
+          onClick={() => setPdfUrl("")}>
 						Clear PDF
 					</Button>
 				</div>
