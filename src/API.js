@@ -40,7 +40,7 @@ function MyComponent() {
 return (
 	<Container maxWidth="lg" style={{ textAlign: "center" }}>
 		<div>
-			<input type="text" className="linkField" value={htmlUrl} onChange={handleChange} /> <br />
+			<input type="text" value={htmlUrl} onChange={handleChange} /> <br />
 			<LoadingButton
 				loading={isLoading} // Use the isLoading state to control the loading state of the button
 				loadingIndicator="Loading…"

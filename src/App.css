@@ -17,6 +17,10 @@ input[type="text"] {
   height: 30px;
   margin-top: 50px;
   margin-bottom:40px;
+  border: 2px dashed;
+  border-color: #068FF1;
+ 
+  
 }
 
 @media (max-width: 768px) {
@@ -43,7 +47,3 @@ background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
   }
 };
 
-
-.LoadingButton {
-    width: 100vw;
-}
