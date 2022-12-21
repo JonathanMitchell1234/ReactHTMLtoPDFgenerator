@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+
 .headerTitle {
     font-family: 'Alata', sans-serif;
     font-size: 50px;
@@ -32,7 +33,7 @@ input[type="text"] {
 .anim_gradient {
 background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
         background-size : "400% 400%";
-        animation : "gradient 25s ease infinite";
+        animation : "gradient 10s ease infinite";
     }
       
 @keyframes gradient {
@@ -46,4 +47,3 @@ background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
     background-position: 0% 50%;
   }
 };
-

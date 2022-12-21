@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { Container } from "@mui/material";
 
+
 function MyComponent() {
 	const [htmlUrl, setHtmlUrl] = useState("");
 	const [pdfUrl, setPdfUrl] = useState("");
@@ -47,7 +48,7 @@ return (
 				loadingIndicator="Loading…"
 				variant="contained"
 				onClick={handleGeneratePdf}
-				style={{ backgroundColor: "#068FF1" }}
+				style={{ backgroundColor: "#068FF1", width: "200px", marginBottom: "20px" }}
 			>
 				{" "}
 				Generate PDF
@@ -56,15 +57,17 @@ return (
 				<div>
 					<Button
 						variant="contained"
-						style={{ backgroundColor: "#068FF1" }}
+						style={{ backgroundColor: "#068FF1", width: "200px", marginBottom: "20px" }}
 						onClick={() => window.open(pdfUrl, "_blank")}
-					>
+						>
 						View PDF
 					</Button>
 					<br />
-					<Button 
-          variant="contained" 
-          onClick={() => setPdfUrl("")}>
+					<Button
+						variant="contained"
+						style={{ backgroundColor: "#068FF1", width: "200px", marginBottom: "20px" }}
+						onClick={() => setPdfUrl("")}
+					>
 						Clear PDF
 					</Button>
 				</div>
