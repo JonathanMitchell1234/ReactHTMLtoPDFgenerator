@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from '@mui/material'
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const FooterStyles = styled(Paper)(() => ({
 	textAlign: "center",
@@ -16,12 +17,22 @@ const FooterStyles = styled(Paper)(() => ({
 	},
 }));
 
+// const IconStyles = styled(Paper)(() => ({
+	
+
+// }));
+
+
+
 
 const MyFooter = () => {
     return (
 		<Container>
 			<FooterStyles>
-				<h3>Made with &hearts; by: Jonathan Mitchell</h3>
+				<h3>Made with &hearts; by Jonathan Mitchell</h3>
+				<a href="https://github.com/JonathanMitchell1234/ReactHTMLtoPDFgenerator">
+					<GitHubIcon sx={{ color: "white", fontSize: "30px" }} />
+				</a>
 			</FooterStyles>
 		</Container>
 	);
