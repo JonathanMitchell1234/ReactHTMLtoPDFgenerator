@@ -17,13 +17,6 @@ const FooterStyles = styled(Paper)(() => ({
 	},
 }));
 
-// const IconStyles = styled(Paper)(() => ({
-	
-
-// }));
-
-
-
 
 const MyFooter = () => {
     return (
